@@ -33,12 +33,3 @@ list.sort()
 for j in list:
     print(j)
 >>>>>>> Stashed changes
-
-for i in range(n):
-    a = int(input())
-    list.append(a)
-
-list.sort()
-
-for j in list:
-    print(j)
