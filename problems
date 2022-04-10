@@ -38,6 +38,7 @@ for j in list:
 
 # 10989번 
 
+# 10989번 
 import sys
 
 n = int(sys.stdin.readline())
