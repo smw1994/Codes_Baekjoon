@@ -1,8 +1,6 @@
 # 정렬 (Sorting)
 # 2750번
-<<<<<<< Updated upstream
 
-=======
 n = int(input())
 list = []    
 
@@ -30,7 +28,6 @@ list.sort()
 
 for j in list:
     print(j)
->>>>>>> Stashed changes
 
 
 # 10989번 
