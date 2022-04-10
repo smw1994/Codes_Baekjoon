@@ -1,4 +1,15 @@
 # Recursion
+# 정렬 (Sorting)
+# 2750
+n = int(input())
+list = []    
 
 # 2447
+for i in range(n):
+    a = int(input())
+    list.append(a)
 
+list.sort()
+
+for j in list:
+    print(j)
