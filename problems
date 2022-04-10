@@ -57,3 +57,36 @@ for i in range(len(array)):
             min_index = j
     array[min_index], array[i] = array[i], array[min_index] # 스와프
 
+
+# 2108번
+import sys
+from collections import Counter
+
+n = int(input())
+list = []
+
+for _ in range(n):
+    list.append(int(sys.stdin.readline()))
+    
+list.sort()    
+    
+avg = round(sum(list)/len(list))
+median = list[len(list)//2]
+max_count = 0
+period = abs(list[len(list)-1]-list[0])
+
+cnt = Counter(list).most_common(2)
+
+if len(list) > 1:
+    if cnt[0][1] == cnt[1][1]:
+        max_count = cnt[1][0]
+    else:
+        max_count = cnt[0][0]
+else:
+    max_count = cnt[0][0]
+    
+print(avg)
+print(median)
+print(max_count)
+print(period)
+
