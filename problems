@@ -1,10 +1,7 @@
 # 정렬 (Sorting)
-# 2750
 # 2750번
 <<<<<<< Updated upstream
 
-n = int(input())
-list = []    
 =======
 n = int(input())
 list = []    
@@ -19,7 +16,6 @@ for j in list:
     print(j)
 
 
-# 2751
 # 2751번
 import sys
 
@@ -36,7 +32,6 @@ for j in list:
     print(j)
 >>>>>>> Stashed changes
 
-# 10989번 
 
 # 10989번 
 import sys
