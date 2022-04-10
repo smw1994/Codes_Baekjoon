@@ -1,5 +1,6 @@
 # 정렬 (Sorting)
 # 2750
+# 2750번
 <<<<<<< Updated upstream
 
 n = int(input())
@@ -19,6 +20,7 @@ for j in list:
 
 
 # 2751
+# 2751번
 import sys
 
 n = int(input())
@@ -33,3 +35,19 @@ list.sort()
 for j in list:
     print(j)
 >>>>>>> Stashed changes
+
+# 10989번 
+
+import sys
+
+n = int(sys.stdin.readline())
+list = [0]*10001
+
+for i in range(n):
+    a = int(sys.stdin.readline())
+    list[a] += 1
+
+for j in range(10001):
+    if list[j] != 0:
+        for k in range(list[j]):
+            print(j)
