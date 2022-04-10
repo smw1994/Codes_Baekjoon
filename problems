@@ -1,8 +1,38 @@
 # 정렬 (Sorting)
 # 2750
+<<<<<<< Updated upstream
 
 n = int(input())
 list = []    
+=======
+n = int(input())
+list = []    
+
+for i in range(n):
+    a = int(input())
+    list.append(a)
+
+list.sort()
+
+for j in list:
+    print(j)
+
+
+# 2751
+import sys
+
+n = int(input())
+list = []    
+
+for i in range(n):
+    a = int(sys.stdin.readline())
+    list.append(a)
+
+list.sort()
+
+for j in list:
+    print(j)
+>>>>>>> Stashed changes
 
 for i in range(n):
     a = int(input())
