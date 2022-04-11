@@ -90,3 +90,13 @@ print(median)
 print(max_count)
 print(period)
 
+
+# 1427번
+
+str = input()
+list = [int(i) for i in str]
+
+list.sort(reverse=True)
+
+for i in list:
+    print(i, end="")
