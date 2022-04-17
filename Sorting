@@ -111,3 +111,18 @@ for i in range(1, len(array)):
             array[j], array[j-1] == array[j-1], array[j]
         else:
             break    
+
+
+# 10814번
+n = int(input())
+list = []
+
+for _ in range(n):
+    data = input().split()
+    list.append((int(data[0]), data[1]))
+
+new_list = sorted(list, key=lambda data: data[0])
+
+for i in range(len(new_list)):
+    print(new_list[i][0], new_list[i][1])
+    
