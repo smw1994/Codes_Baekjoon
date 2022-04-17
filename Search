@@ -1,1 +1,82 @@
 # 순차 탐색 (Sequential Search)
+
+def sequential_search(n, target, array):
+    for i in range(n):
+        if array[i] == target:
+            return i+1
+
+print("찾을 문자열을 입력하세요")
+input_data = input().split()
+n = input_data[0]
+target = input_data[1]
+
+print("문자열을 입력하세요")
+array = input().split()
+
+print(sequential_search(n, target, array))
+
+
+# 이진 탐색 (Binary Search)
+# 재귀 함수로 구현
+
+def binary_search(array, target, start, end):
+    if start > end:
+        return None
+    mid = (start + end) // 2
+
+    if array[mid] == target:
+        return mid
+
+    elif array [mid] > target:
+        return binary_search(array, target, start, mid-1)
+    
+    elif array[mid] < target:
+        return binary_search(array, target, mid+1, end)
+
+n, target = list(map(int, input().split()))
+array = list(map(int, input().split()))
+
+result = binary_search(n, target, array, 0, n-1)
+
+if result == None:
+    print("원소가 존재하지 않습니다.")
+else:
+    print(result+1)
+
+# 반복문 구현
+def binary_search(array, target, start, end):
+    while start <= end:
+        mid = (start+end) // 2
+        if array[mid] == target:
+            return mid
+        elif array[mid] < target:
+            start = mid + 1
+        else:
+            end = mid - 1
+    return None
+
+# 1920번
+def binary_search(array, target, start, end):
+    while start <= end:
+        mid = (start+end) // 2 
+        if array[mid] == target:
+            return mid
+        elif array[mid] < target:
+            start = mid + 1
+        else:
+            end = mid - 1
+    return None
+
+n = int(input())
+array = list(map(int, input().split()))
+array.sort()
+
+m = int(input())
+targets = list(map(int, input().split()))
+
+for target in targets:
+    result = binary_search(array, target, 0, n-1)
+    if result == None:
+        print(0)
+    else:
+        print(1)
