@@ -1,4 +1,5 @@
-#Algorithm Study Note & Baekjoon problem solving
+Algorithm Study Note 
++ Baekjoon problem solving
 
 기초 Algorithm 연습을 위한 개인 노트입니다.
 
