@@ -1,4 +1,4 @@
-# Codes_Baekjoon
+#Algorithm Study Note & Baekjoon problem solving
 
 기초 Algorithm 연습을 위한 개인 노트입니다.
 
@@ -7,4 +7,3 @@
 1. 정렬 (Sort)
 2. 탐색 (Search)
 
-#꾸준하자
